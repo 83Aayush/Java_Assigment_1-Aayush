@@ -1,42 +1,56 @@
 🏦 Banking Application
 
-A console-based Banking Application written in Java that allows users to manage multiple bank accounts.
-This project is built in a single Java file for simplicity and demonstrates OOP concepts, arrays, string handling, and control structures.
+A simple console-based banking application written in Java that allows users to manage their bank accounts.
+This project demonstrates Object-Oriented Programming (OOP) concepts such as encapsulation, nested classes, arrays, and string handling.
 
 🚀 Features
 
-➕ Create new bank accounts
+➕ Create new bank accounts (auto-generated account numbers)
 
 💰 Deposit money into an account
 
 💸 Withdraw money with balance validation
 
-👤 View account details
+👤 View account details (account number, holder name, balance, contact info)
 
-✏️ Update email and phone number
+✏️ Update email & phone number
 
-📋 Menu-driven console interface
+📋 Menu-driven interface
 
 Supports up to 100 accounts
 
 🏗️ Project Structure
 
-The entire logic is implemented in one file: BankingApplication.java
+The application is written in a single file: BankingApplication.java
 
-Account (nested class) → Handles account details and operations (deposit, withdraw, display, update).
+Account (nested static class)
 
-UserInterface (nested class) → Provides menu-driven interaction and manages multiple accounts using arrays.
+Stores account information: account number, name, balance, email, phone
 
-BankingApplication (main class) → Entry point of the application.
+Provides methods: deposit(), withdraw(), displayAccountDetails(), updateContactDetails()
+
+UserInterface (nested static class)
+
+Handles user interaction via menu-driven options
+
+Manages multiple accounts in an array
+
+Provides methods: createAccount(), performDeposit(), performWithdrawal(), showAccountDetails(), updateContact()
+
+BankingApplication (main class)
+
+Entry point of the program (main() method)
+
+Creates UserInterface object and starts the application
 
 ⚙️ Technologies Used
 
 Java (Core Java)
 
-OOP Principles (Encapsulation, Classes & Objects)
-
-Arrays & Strings
+Object-Oriented Programming (Encapsulation, Classes, Objects)
 
 Control Structures (if-else, switch, loops)
 
-Scanner Class for user input
+Arrays & Strings
+
+Scanner Class (for console input)
