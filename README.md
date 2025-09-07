@@ -1,49 +1,48 @@
-# 🏦 Banking Application (Java)
+# 🏦 Banking Application  
 
-A simple **Banking Application** built in **Java** that allows users to manage bank accounts.  
-The application is **menu-driven** and runs in the console.  
-It supports account creation, deposits, withdrawals, contact updates, and account detail display.  
-
----
-
-## ✨ Features
-- 📌 **Create a New Account**  
-  - Auto-generated account number (starts from 1001).  
-  - Requires name, initial deposit, email, and phone number.  
-
-- 💰 **Deposit Money**  
-  - Add funds to an account.  
-  - Rejects invalid/negative amounts.  
-
-- 💸 **Withdraw Money**  
-  - Withdraw if sufficient balance is available.  
-  - Prevents overdrawing.  
-
-- 👤 **View Account Details**  
-  - Shows account number, holder name, balance, email, and phone number.  
-
-- ✉️ **Update Contact Information**  
-  - Update email and phone number.  
-
-- 🚪 **Exit**  
-  - Exit the program safely.  
+A simple **console-based banking application** written in **Java** that allows users to manage their bank accounts.  
+This project demonstrates **Object-Oriented Programming (OOP)** concepts such as encapsulation, nested classes, arrays, and string handling.  
 
 ---
 
-## 🛠️ Tech Stack
-- **Language**: Java  
-- **OOP Concepts**:  
-  - Classes & Objects  
-  - Encapsulation (private fields with methods)  
-  - Static nested classes (`Account`, `UserInterface`)  
-  - Menu-driven input using `Scanner`  
+## 🚀 Features  
+
+- ➕ **Create new bank accounts** 
+- 💰 **Deposit money** into an account  
+- 💸 **Withdraw money** with balance validation  
+- 👤 **View account details** (account number, holder name, balance, contact info)  
+- ✏️ **Update email & phone number**  
+- 📋 **Menu-driven interface**  
+- Supports **up to 100 accounts**  
 
 ---
 
-## ▶️ How to Run
+## 🏗️ Project Structure  
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/BankingApplication.git
-   cd BankingApplication
+The application is written in a **single file**: `BankingApplication.java`  
+
+- **`Account` (nested static class)**  
+  - Stores account information: account number, name, balance, email, phone  
+  - Provides methods: `deposit()`, `withdraw()`, `displayAccountDetails()`, `updateContactDetails()`  
+
+- **`UserInterface` (nested static class)**  
+  - Handles user interaction via menu-driven options  
+  - Manages multiple accounts in an array  
+  - Provides methods: `createAccount()`, `performDeposit()`, `performWithdrawal()`, `showAccountDetails()`, `updateContact()`  
+
+- **`BankingApplication` (main class)**  
+  - Entry point of the program (`main()` method)  
+  - Creates `UserInterface` object and starts the application  
+
+---
+
+## ⚙️ Technologies Used  
+
+- **Java (Core Java)**  
+- **Object-Oriented Programming** (Encapsulation, Classes, Objects)  
+- **Control Structures** (`if-else`, `switch`, `loops`)  
+- **Arrays & Strings**  
+- **Scanner Class** (for console input)  
+
+---
 
